@@ -12,10 +12,18 @@ const Navbar = () => {
                 <img className="mx-0" width={70} height={70} src={logo} alt="" />
             </div>
             <div className="m-8 flex items-center justify-center gap-4 text-2xl">
-                <FaLinkedin />
-                <FaGithub />
-                <FaSquareXTwitter />
-                <FaInstagram />
+                <a href="https://www.linkedin.com/in/ashish-thatipelli-211b5b1b3/" target="_blank" rel="noopener noreferrer">
+                    <FaLinkedin />
+                </a>
+                <a href="https://github.com/Ashish-1521" target="_blank" rel="noopener noreferrer">
+                    <FaGithub />
+                </a>
+                <a href="https://x.com/thatipellia?s=21" target="_blank" rel="noopener noreferrer">
+                    <FaSquareXTwitter />
+                </a>
+                <a href="https://www.instagram.com/ashish_thatipelli?igsh=MWxpOWRieGwxOHNsZg%3D%3D&utm_source=qr" target="_blank" rel="noopener noreferrer">
+                    <FaInstagram />
+                </a>
             </div>
         </nav>
     );
