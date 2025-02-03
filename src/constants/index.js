@@ -4,6 +4,7 @@ import city from "../assets/projects/city.png";
 import classification from "../assets/projects/classification.png";
 import gd from "../assets/projects/gd.jpg";
 import land from "../assets/projects/land-fill.png";
+import mouse from "../assets/projects/virtual_mouse.jpg";
 
 export const HERO_CONTENT = `I am a dynamic software engineer and full stack developer with a passion for crafting innovative digital solutions. Combining expertise in modern web technologies like React, Angular, and Node.js with cloud platforms and DevOps practices, I specialize in building scalable, user-centric applications. Currently pursuing my Master's in Computer Science while serving as a Graduate Teaching Associate, I bring a unique blend of academic insight and practical development experience to every project.`;
 
@@ -77,3 +78,28 @@ export const CONTACT = {
   phoneNo: "+12 4555 666 00 ",
   email: "ashish.thatipalli@gmail.com",
 };
+
+export const PUBLICATIONS = [
+  {
+    title: "Virtual Mouse",
+    image: mouse, // Ensure 'city' is defined/imported correctly
+    description: `The "Virtual Mouse" research paper, published in the International Research Journal of Modernization in Engineering Technology and Science (IRJMETS), presents a vision-based system for touch-free human-computer interaction. Utilizing real-time hand gesture recognition, this system performs essential mouse operations such as clicking, dragging, and scrolling without requiring a physical device.
+By leveraging computer vision techniques, the Virtual Mouse enhances accessibility and hygiene, making it ideal for healthcare environments, public kiosks, and educational institutions where minimizing physical contact is crucial. The system is built using Python and OpenCV, incorporating Haar cascades and contour detection to recognize gestures efficiently.
+This innovation offers a more natural and interactive computing experience, contributing to advancements in human-computer interaction (HCI), assistive technology, and computer vision applications.`,
+    technologies: ["Python", "OpenCV", "Haar Cascades", "Contour Detection"],
+    features: [
+      "Real-time hand gesture recognition",
+      "Supports left-click, right-click, double-click, drag, and scroll",
+      "Touch-free interaction for hygienic and accessible computing"
+    ],
+    // applications: [
+    //   "Healthcare environments",
+    //   "Public kiosks",
+    //   "Educational institutions"
+    // ],
+    journal: "International Research Journal of Modernization in Engineering Technology and Science (IRJMETS)",
+    date: "April 2022",
+    paperId: "IRJMETS40400115863",
+    publicationLink: "https://www.irjmets.com/uploadedfiles/paper/issue_4_april_2022/21664/final/fin_irjmets1651296943.pdf"
+  }
+];
