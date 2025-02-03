@@ -33,7 +33,7 @@ const Publications = () => {
                             <h3 className="mb-4 text-neutral-400">{publication.paperId}</h3>
                             <h2 className="mb-2 font-semibold">Date</h2>
                             <h3 className="mb-2 text-neutral-500">{publication.date}</h3>
-                            <a href={publication.publicationLink} className="mb-4 border-b font-semibold">Publication Link</a>
+                            <a href={publication.publicationLink} className="border-b font-semibold">Publication Link</a>
                         </motion.div>
                         <motion.div
                             whileInView={{ opacity: 1, x: 0 }}
@@ -43,7 +43,7 @@ const Publications = () => {
                             <h6 className="mb-2 font-semibold">{publication.title}</h6>
                             <p className="mb-4 text-neutral-400">{publication.description}</p>
                             {publication.technologies.map((technique, index) => (
-                                <span key={index} className="bg-gray-200 mb-2 mr-2 px-2 py-1 rounded-sm text-xs font-semibold text-gray-700">
+                                <span key={index} className="inline-block bg-gray-200 mb-2 mr-2 px-2 py-1 rounded-sm text-xs font-semibold text-gray-700">
                                     {technique}
                                 </span>
                             ))}
