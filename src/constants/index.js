@@ -11,21 +11,21 @@ export const ABOUT_TEXT = `As a versatile software engineer, I thrive on transfo
 
 export const EXPERIENCES = [
   {
-    year: "2025 - Present",
+    year: "Jan 2025 - Present",
     role: "Graduate Teaching Associate",
     company: "University of Central Florida",
     description: `Lead instruction in Mobile Development courses, creating and managing comprehensive JavaScript-based curriculum and assignments. Developed engaging course content and provided mentorship while maintaining a positive learning environment. Enhanced student engagement through innovative teaching methods and practical programming assignments.`,
     technologies: ["JavaScript", "Mobile Development", "Web Development", "Course Management Systems"],
   },
   {
-    year: "2023 - 2024",
+    year: "Dec 2023 - Apr 2024",
     role: "Graduate Research Assistant",
     company: "University of Central Florida",
     description: `Spearheaded development of advanced 3D visualization systems using LIDAR point cloud data. Engineered sophisticated data processing pipelines for transforming raw data into interactive 3D visualizations. Implemented real-time atmospheric effects using Niagara engine's particle system, significantly enhancing visual fidelity.`,
     technologies: ["3D Visualization", "Data Processing", "Niagara Engine", "Real-time Graphics"],
   },
   {
-    year: "2022 - 2023",
+    year: "Mar 2022 - Apr 2023",
     role: "Junior Game Developer",
     company: "GamezeniQ Technologies Pvt Ltd",
     description: `Led development of four major game projects, including Gun Master: Action Shooter and Bubble Blast 2022. Implemented complex game logic combining 2D/3D animations with physics systems and AI character behavior. Enhanced game performance by 20% through optimization and collaboration with artists.`,
