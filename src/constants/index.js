@@ -44,7 +44,7 @@ export const PROJECTS = [
     title: "Game Development Portfolio",
     image: gd,
     description: "Led development of four commercial games including Gun Master: Action Shooter and Sniper Shooting, achieving 20% improvement in user engagement. Implemented AI-driven character behaviors, physics systems, and dynamic gameplay mechanics for Google Play Store publication.",
-    technologies: ["Unity", "C#", "AI Systems", "2D/3D Animation", "XML", "JSON"],
+    technologies: ["Unity", "C#", "OOP", "AI Systems", "2D/3D Animation", "XML", "JSON"],
   },
   {
     title: "Skin Cancer Classification Web App",
