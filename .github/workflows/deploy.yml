@@ -2,7 +2,7 @@ name: Deploy to GitHub Pages
 
 on:
   push:
-    branches: [ "main" ]
+    branches: ["main"]
 
 jobs:
   deploy:
@@ -29,6 +29,10 @@ jobs:
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          github_token: ${{ secrets.GH_TOKEN }}   # Use the personal token (instead of GITHUB_TOKEN)
           publish_dir: ./dist
           force_orphan: true
+          user_name: 'Ashish-1521'                  # Optional: set your username for commit
+          user_email: 'ashish.thatipalli@gmail.com'    # Optional: set your email for commit
+          target_branch: gh-pages                 # Ensure deployment goes to gh-pages branch
+          repository_name: Ashish-1521/portfolio # Make sure to set the repo name (new public repo)
