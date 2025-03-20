@@ -1,15 +1,15 @@
-name: Deploy to GitHub Pages
+name: Deploy to Public Repo
 
 on:
   push:
-    branches: ["main"]
+    branches: [ "main" ] # Only trigger on main branch push
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
     permissions:
       contents: write
-      
+
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
@@ -26,13 +26,11 @@ jobs:
       - name: Build project
         run: npm run build
 
-      - name: Deploy to GitHub Pages
+      - name: Deploy to Public Repo
         uses: peaceiris/actions-gh-pages@v3
         with:
-          github_token: ${{ secrets.GH_TOKEN }}   # Use the personal token (instead of GITHUB_TOKEN)
-          publish_dir: ./dist
-          force_orphan: true
-          user_name: 'Ashish-1521'                  # Optional: set your username for commit
-          user_email: 'ashish.thatipalli@gmail.com'    # Optional: set your email for commit
-          target_branch: gh-pages                 # Ensure deployment goes to gh-pages branch
-          repository_name: Ashish-1521/portfolio # Make sure to set the repo name (new public repo)
+          personal_token: ${{ secrets.GH_TOKEN }}  # Use the PAT
+          external_repository: Ashish-1521/portfolio  # Deploy to the new public repo
+          publish_branch: gh-pages  # Deploy to gh-pages branch in the new repo
+          publish_dir: ./dist  # Deploy the build folder
+          force_orphan: true  # Overwrite without history
